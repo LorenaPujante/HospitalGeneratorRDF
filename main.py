@@ -92,10 +92,10 @@ def main(index, huPerService, nFloors, huPerFloor, nRows, nColumns, startDateTim
     appendDictionarys(dicCorridors0, dicCorridors)
     appendDictionarys(dicOrdCorridors, dicCorridors)
 
-
+    
     # PATIENTS 
     dicPatients = parsePatients()
-
+    
     # MICROORGANISMS
     # A dummy Microorganism is created, since only one will be detected
     dicMicroorganisms = {}
@@ -119,7 +119,7 @@ def main(index, huPerService, nFloors, huPerFloor, nRows, nColumns, startDateTim
     print("Last patient: {}".format(keysPatients[len(keysPatients)-1]))
 
     print("Range Steps: [0, {}] \n".format(lastStep))
-
+    
 
     
     # PRINT RESUMENES
@@ -127,7 +127,7 @@ def main(index, huPerService, nFloors, huPerFloor, nRows, nColumns, startDateTim
     printSummaryHospital(nFloors, dicFloors, dicBeds)
     printEpisodeSummary(dicPatients, startDateTime)
 
-
+    
     # PRINT CSV
     setFolderOutputCSV(".\\OutputCSV")
     printCSV(dicServices, dicHospUnits, dicBuildings, dicFloors, dicUnits, dicBlocks, dicAreas, dicCorridors, dicRooms, dicBeds, dicPatients, dicMicroorganisms)
