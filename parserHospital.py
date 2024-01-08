@@ -25,11 +25,11 @@ def parseHospital(dicHospUnits, dicServices, huPerService, index):
             
             line = str(line)
 
-            # Create csv with the Rooms
+            # Read file with input hospital layout 
             if (not parent and not children and not neighbours):
-                if (line == "hijos\n"):
+                if (line == "children\n"):
                     children = True
-                elif (line == "vecinos\n"):
+                elif (line == "neighbours\n"):
                     neighbours = True  
                 elif (line == "parent\n"):
                     parent = True
@@ -62,7 +62,7 @@ def parseHospital(dicHospUnits, dicServices, huPerService, index):
                         dicServices[id] = s
                         nService += 1
 
-                    elif (type==1 or type==4 or type==5):   # Create Rooms (without name)
+                    elif (type==1 or type==4 or type==5 or type==3):   # Create Rooms (without name)
                         r = Room(id,"")
 
                         if (type==1):    # The ER HospUnit and Service are associated with the Room
@@ -76,27 +76,17 @@ def parseHospital(dicHospUnits, dicServices, huPerService, index):
                             r.hospUnit = listHospUnitsIds[1]
                             dicHospUnits[listHospUnitsIds[1]].rooms.append(id)
                             dicServices[listServicesIds[1]].rooms.append(r.id)
-
+                        
+                        elif (type==3): # The Radiology HospUnit and Service are associated with the Room
+                            r.description = "rad"
+                            r.hospUnit = listHospUnitsIds[2]
+                            dicHospUnits[listHospUnitsIds[2]].rooms.append(id)
+                            dicServices[listServicesIds[2]].rooms.append(id)
+                            
                         dicRooms[id] = r
 
-                    elif (type==2 or type==3 or type==7):     # Create Beds (no name)    
+                    elif (type==2 or type==7):     # Create Beds (no name)    
                         b = Bed(id,"")
-                        
-                        if (type==3):       # RADIOLOGY  
-                                # Create Radiology Room for the Bed
-                            index += 1
-                            r = Room(index, "rad")
-                            dicRooms[index] = r
-                            r.beds.append(b.id)
-                            b.parent = r.id
-                                # The Bed and Room are associated with their HospUnit and Service
-                            b.hospUnit = listHospUnitsIds[2]
-                            dicHospUnits[listHospUnitsIds[2]].beds.append(b.id)
-                            r.hospUnit = listHospUnitsIds[2]
-                            dicHospUnits[listHospUnitsIds[2]].rooms.append(r.id)
-                            dicServices[listServicesIds[2]].rooms.append(r.id)
-                            
-                            b.type = TypeBed.Radiology
                             
                         if (type==2):       # SURGERY
                                 # Create Surgery Room for the the Bed  
@@ -113,13 +103,13 @@ def parseHospital(dicHospUnits, dicServices, huPerService, index):
                             dicServices[listServicesIds[3]].rooms.append(r.id)
 
                             b.type = TypeBed.Surgery
-                            
+
                         dicBeds[id] = b
 
 
             # line with the parent
             elif (parent):      
-                if (currentType == 7): # Beds. They have as a parent: Room, ER(Room), ICU(Room)
+                if (currentType == 7): # Beds. They have as a parent: Room, ER(Room), ICU(Room), RAD(Room)
                     line = line.split('\n')
                     line = line[0]
                     words = line.split(",")
@@ -134,7 +124,11 @@ def parseHospital(dicHospUnits, dicServices, huPerService, index):
                         dicBeds[currentId].hospUnit = listHospUnitsIds[0] 
                     elif typeParent == 5:     # ICU
                         b.type = TypeBed.ICU
-                        dicBeds[currentId].hospUnit = listHospUnitsIds[1]  
+                        dicBeds[currentId].hospUnit = listHospUnitsIds[1]
+                    elif typeParent == 3:   # RAD
+                        b.type = TypeBed.Radiology
+                        dicBeds[currentId].hospUnit = listHospUnitsIds[2]
+                        dicHospUnits[listHospUnitsIds[2]].beds.append(b.id) 
 
                 elif (currentType == 4):  # Rooms. They have as a parent: Service -> Not their parent
                     line = line.split('\n')
@@ -149,10 +143,10 @@ def parseHospital(dicHospUnits, dicServices, huPerService, index):
 
             # With these types of lines we do NOTHING
             elif (children):
-                if (line == "hijos_end\n"):
+                if (line == "children_end\n"):
                     children = False
             elif (neighbours):
-                if (line == "vecinos_end\n"):
+                if (line == "neighbours_end\n"):
                     neighbours = False
                 
 
