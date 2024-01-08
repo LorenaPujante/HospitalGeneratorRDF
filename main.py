@@ -154,16 +154,6 @@ def main(index, huPerService, nFloors, huPerFloor, nRows, nColumns, startDateTim
 
 #print("Last id Hospital: {}".format(getLastIndexHospital()))
 
-# Test of reading parameters from file
-'''print("Params from file:")
-params = readParams()
-for ps in params:
-    print(" Linea")
-    for p in ps:
-        print(" - {}".format(p))'''
-
-
-
 # PARAMS
         # The folders where the result files are created are not parameters     
 index = 1600
