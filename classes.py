@@ -118,7 +118,7 @@ class Patient:
         self.death = death
         self.stepLocations = {}     # IDs are saved
         self.episodes = []      # The objects are saved
-        self.seir = [None, None, None, None]     # To save in which step each state starts
+        self.seird = [None, None, None, None, None]     # To save in which step each state starts
 
 
 ##########
