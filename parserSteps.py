@@ -1,4 +1,3 @@
-
 from classes import *
 from datetime import datetime, timedelta
 import random
@@ -9,7 +8,7 @@ def parseSteps(dicPatients):
 
     step = 0
 
-    with open(".\\Input\\salida.csv") as file:
+    with open(".\\Input\\movements.csv") as file:
         for lineString in file:
             
             lineString = str(lineString)
@@ -23,22 +22,28 @@ def parseSteps(dicPatients):
                 # line[i]      ->  patient_id
                 # line[i+1]    ->  patient_state
                 # line[i+2]    ->  locationId
-                # line[i+3]    ->  location_infected   :   Don't usec
+                # line[i+3]    ->  location_infected   :   Don't used
                 if line[i]=='places' or line[i+1]=='places' or line[i+2]=='places' or line[i+3]=='places':
                     places = True
                 else:
                     patientId = int(line[i])
-                    locationId = int(line[i+2])
-                    seirState = int(line[i+1])
+                    seirdState = int(line[i+1])
+                    if seirdState == 4:    # DEATH Event
+                        i += 3
+                    else:
+                        locationId = int(line[i+2])
+                        
 
-                    patient = dicPatients[patientId]
-                    patient.stepLocations[step] = locationId
-                    
+                        patient = dicPatients[patientId]
+                        patient.stepLocations[step] = locationId
+                        
+                        i += 4 
+
                         # It is ONLY intended for PATIENTS WITH 1 EPISODE
-                    if patient.seir[seirState] is None:
-                        patient.seir[seirState] = step
+                    if patient.seird[seirdState] is None:
+                            patient.seird[seirdState] = step
 
-                    i += 4 
+                    
 
     file.close()
 
@@ -62,7 +67,7 @@ def createEpisode(nEpisode, idPatient, start, end, events, index):
 
 def createEvent(nEvent, nEpisode, idPatient, start, end, location, index, dicBeds):
     
-    type = TypeEvent.Hospitalization   
+    type = TypeEvent.Hospitalization 
     if dicBeds[location].type is TypeBed.Radiology:
         type = TypeEvent.Radiology     
     elif dicBeds[location].type is TypeBed.Surgery:
@@ -203,9 +208,9 @@ def createTestMicro_StartInfected(dicPatients, dicMicroorganisms, startDateTime,
     
     for patient in dicPatients.values():
         
-        if patient.seir[2] is not None:  # Patient as been infected
-            stepI = patient.seir[2]
-            if patient.seir[1] is not None:  # Patient has gone from Exposed -> Infected
+        if patient.seird[2] is not None:  # Patient as been infected
+            stepI = patient.seird[2]
+            if patient.seird[1] is not None:  # Patient has gone from Exposed -> Infected
                 datetimeTest  = startDateTime + timedelta(hours=8*stepI)
             else:   # Patient has been directly admitted in an Infected state
                 datetimeTest  = patient.episodes[0].start
@@ -233,17 +238,17 @@ def createTestMicro_DuringInfected(dicPatients, dicMicroorganisms, startDateTime
     
     for patient in dicPatients.values():
         
-        if patient.seir[2] is not None:  # Patient has been Infected
-            stepI = patient.seir[2]
+        if patient.seird[2] is not None:  # Patient has been Infected
+            stepI = patient.seird[2]
             
-            if patient.seir[1] is not None:  # Patient has gone from Exposed -> Infected
+            if patient.seird[1] is not None:  # Patient has gone from Exposed -> Infected
                 stepI_start  = startDateTime + timedelta(hours=8*stepI)
             else:   # Patient has been directly admitted in an Infected state
                 stepI_start  = patient.episodes[0].start
             startRandom = stepI_start.timestamp()
 
-            if patient.seir[3] is not None: # Patient has gone from Infected -> Recovered
-                stepI_end  = startDateTime + timedelta(hours=8*patient.seir[3])
+            if patient.seird[3] is not None: # Patient has gone from Infected -> Recovered
+                stepI_end  = startDateTime + timedelta(hours=8*patient.seird[3])
             else:   # Patient has left the hospital (alive or dead) in an Infected state
                 stepI_end = patient.episodes[0].end
             endI = stepI_end.timestamp()
