@@ -17,7 +17,7 @@ def parsePatients():
                 sex = False
             else:
                 sex = True                
-            death = line[len(line)-1].rstrip()
+            death = line[len(line)-4].rstrip()
             if death=='False':
                 death = False
             elif death=='True':
