@@ -172,9 +172,9 @@ def getLastIndexHospital():
             line = str(line)
 
             if (not parent and not children and not neighbours):
-                if (line == "hijos\n"):
+                if (line == "children\n"):
                     children = True
-                elif (line == "vecinos\n"):
+                elif (line == "neighbours\n"):
                     neighbours = True  
                 elif (line == "parent\n"):
                     parent = True
@@ -192,10 +192,10 @@ def getLastIndexHospital():
             elif (parent):      
                 parent = False
             elif (children):
-                if (line == "hijos_end\n"):
+                if (line == "children_end\n"):
                     children = False
             elif (neighbours):
-                if (line == "vecinos_end\n"):
+                if (line == "neighbours_end\n"):
                     neighbours = False
     
     '''Close hospital.txt'''
