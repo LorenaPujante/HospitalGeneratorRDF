@@ -1,0 +1,794 @@
+	HOSPITAL SUMMARY:
+
+ - The hospital will have 4 Floors
+
+  Floors:
+  + f0 (id: 378) has: 1 Row (Unit) y 2 Column (Blocks)
+
+   Hospitalization Units (4):
+   - ERU - Emergency Unit (id: 351)	Rooms: [0]   --Service->   ER - Emergency Service (id: 350)
+   - ICUU - Intensive Care Unit (id: 353)	Rooms: [1]   --Service->   ICU - Intensive Care Unit Service (id: 352)
+   - RADU - Radiology Unit (id: 355)	Rooms: [13, 14, 15, 16]   --Service->   RAD - Radiology Service (id: 354)
+   - SURGU - Surgery Unit (id: 357)	Rooms: [375, 376, 377]   --Service->   SURG - Surgery Service (id: 356)
+
+   Areas:
+   - a0A_f0 (id: 382)
+    Horizontal Corridors:
+    - c0_a0A_f0 (id: 384)
+		NextTo: {'1': 385, }
+		RoomsBorder: {'leftTop': 1, 'leftBottom': 0, 'rightTop': 1, 'rightBottom': 0, }
+
+     Rooms:
+     - rER_c0_a0A_f0 (id: 0)	NextTo: [13]	Opposite: [1]
+      Beds:
+      - b0_rER_c0_a0A_f0 (id: 17)	NextTo: [19]	Opposite: [18]
+      - b1_rER_c0_a0A_f0 (id: 18)	NextTo: [20]	Opposite: [17]
+      - b2_rER_c0_a0A_f0 (id: 19)	NextTo: [17, 21]	Opposite: [20]
+      - b3_rER_c0_a0A_f0 (id: 20)	NextTo: [18, 22]	Opposite: [19]
+      - b4_rER_c0_a0A_f0 (id: 21)	NextTo: [19, 23]	Opposite: [22]
+      - b5_rER_c0_a0A_f0 (id: 22)	NextTo: [20, 24]	Opposite: [21]
+      - b6_rER_c0_a0A_f0 (id: 23)	NextTo: [21, 25]	Opposite: [24]
+      - b7_rER_c0_a0A_f0 (id: 24)	NextTo: [22, 26]	Opposite: [23]
+      - b8_rER_c0_a0A_f0 (id: 25)	NextTo: [23, 27]	Opposite: [26]
+      - b9_rER_c0_a0A_f0 (id: 26)	NextTo: [24, 28]	Opposite: [25]
+      - b10_rER_c0_a0A_f0 (id: 27)	NextTo: [25, 29]	Opposite: [28]
+      - b11_rER_c0_a0A_f0 (id: 28)	NextTo: [26, 30]	Opposite: [27]
+      - b12_rER_c0_a0A_f0 (id: 29)	NextTo: [27, 31]	Opposite: [30]
+      - b13_rER_c0_a0A_f0 (id: 30)	NextTo: [28, 32]	Opposite: [29]
+      - b14_rER_c0_a0A_f0 (id: 31)	NextTo: [29, 33]	Opposite: [32]
+      - b15_rER_c0_a0A_f0 (id: 32)	NextTo: [30, 34]	Opposite: [31]
+      - b16_rER_c0_a0A_f0 (id: 33)	NextTo: [31, 35]	Opposite: [34]
+      - b17_rER_c0_a0A_f0 (id: 34)	NextTo: [32, 36]	Opposite: [33]
+      - b18_rER_c0_a0A_f0 (id: 35)	NextTo: [33]	Opposite: [36]
+      - b19_rER_c0_a0A_f0 (id: 36)	NextTo: [34]	Opposite: [35]
+
+     - rICU_c0_a0A_f0 (id: 1)	NextTo: [375]	Opposite: [0]
+      Beds:
+      - b0_rICU_c0_a0A_f0 (id: 37)	NextTo: [39]	Opposite: [38]
+      - b1_rICU_c0_a0A_f0 (id: 38)	NextTo: [40]	Opposite: [37]
+      - b2_rICU_c0_a0A_f0 (id: 39)	NextTo: [37, 41]	Opposite: [40]
+      - b3_rICU_c0_a0A_f0 (id: 40)	NextTo: [38, 42]	Opposite: [39]
+      - b4_rICU_c0_a0A_f0 (id: 41)	NextTo: [39, 43]	Opposite: [42]
+      - b5_rICU_c0_a0A_f0 (id: 42)	NextTo: [40, 44]	Opposite: [41]
+      - b6_rICU_c0_a0A_f0 (id: 43)	NextTo: [41, 45]	Opposite: [44]
+      - b7_rICU_c0_a0A_f0 (id: 44)	NextTo: [42, 46]	Opposite: [43]
+      - b8_rICU_c0_a0A_f0 (id: 45)	NextTo: [43]	Opposite: [46]
+      - b9_rICU_c0_a0A_f0 (id: 46)	NextTo: [44]	Opposite: [45]
+
+   - a1A_f0 (id: 383)
+    Horizontal Corridors:
+    - c0_a1A_f0 (id: 385)
+		NextTo: {'0': 384, }
+		RoomsBorder: {'leftTop': 375, 'leftBottom': 13, 'rightTop': 377, 'rightBottom': 16, }
+
+     Rooms:
+     - rRAD0_c0_a1A_f0 (id: 13)	NextTo: [0, 14]	Opposite: [375]
+      Beds:
+      - b0_rRAD0_c0_a1A_f0 (id: 329)	NextTo: [330]	Opposite: []
+      - b1_rRAD0_c0_a1A_f0 (id: 330)	NextTo: [329]	Opposite: []
+
+     - rRAD1_c0_a1A_f0 (id: 14)	NextTo: [13, 15]	Opposite: [376]
+      Beds:
+      - b0_rRAD1_c0_a1A_f0 (id: 331)	NextTo: [332]	Opposite: []
+      - b1_rRAD1_c0_a1A_f0 (id: 332)	NextTo: [331]	Opposite: []
+
+     - rRAD2_c0_a1A_f0 (id: 15)	NextTo: [14, 16]	Opposite: [377]
+      Beds:
+      - b0_rRAD2_c0_a1A_f0 (id: 333)	NextTo: [334]	Opposite: []
+      - b1_rRAD2_c0_a1A_f0 (id: 334)	NextTo: [333]	Opposite: []
+
+     - rRAD3_c0_a1A_f0 (id: 16)	NextTo: [15]	Opposite: []
+      Beds:
+      - b0_rRAD3_c0_a1A_f0 (id: 335)	NextTo: [336]	Opposite: []
+      - b1_rRAD3_c0_a1A_f0 (id: 336)	NextTo: [335]	Opposite: []
+
+     - rSURG0_c0_a1A_f0 (id: 375)	NextTo: [1, 376]	Opposite: [13]
+      Beds:
+      - b0_rSURG0_c0_a1A_f0 (id: 10)	NextTo: []	Opposite: []
+
+     - rSURG1_c0_a1A_f0 (id: 376)	NextTo: [375, 377]	Opposite: [14]
+      Beds:
+      - b0_rSURG1_c0_a1A_f0 (id: 11)	NextTo: []	Opposite: []
+
+     - rSURG2_c0_a1A_f0 (id: 377)	NextTo: [376]	Opposite: [15]
+      Beds:
+      - b0_rSURG2_c0_a1A_f0 (id: 12)	NextTo: []	Opposite: []
+
+  + f1 (id: 386) has: 2 Rows (Unit) y 2 Columns (Blocks)
+
+   Hospitalization Units (6):
+   - HU0A - HospUnit 0A (id: 359)	Rooms: [47, 50, 53, 56, 59, 62, 65]   --Service->   S0 - Service 0 (id: 2)
+   - HU0B - HospUnit 0B (id: 360)	Rooms: [68, 71, 74, 77, 80, 83, 86]   --Service->   S0 - Service 0 (id: 2)
+   - HU1A - HospUnit 1A (id: 361)	Rooms: [89, 92, 95, 98, 101, 104]   --Service->   S1 - Service 1 (id: 3)
+   - HU1B - HospUnit 1B (id: 362)	Rooms: [107, 110, 113, 116, 119, 122]   --Service->   S1 - Service 1 (id: 3)
+   - HU2A - HospUnit 2A (id: 363)	Rooms: [125, 128, 131, 134, 137]   --Service->   S2 - Service 2 (id: 4)
+   - HU2B - HospUnit 2B (id: 364)	Rooms: [140, 143, 146, 149, 152]   --Service->   S2 - Service 2 (id: 4)
+
+   Areas:
+   * a0A_f1 (id: 393)	Tipo: A0
+
+    Horizontal Corridors:
+    - c0_a0A_f1 (id: 397)
+		NextTo: {'1': 399, '4': 398, }
+		RoomsBorder: {'rightTop': 62, 'rightBottom': 65, }
+
+     Rooms:
+     - r4_c1_a1B_f1 (id: 59)	NextTo: [62, 65, 53, 53, 62]	Opposite: [62, 62, 62]
+      Beds:
+      - b0_r4_c1_a1B_f1 (id: 60)	NextTo: [61]	Opposite: []
+      - b1_r4_c1_a1B_f1 (id: 61)	NextTo: [60]	Opposite: []
+
+     - r5_c1_a1B_f1 (id: 62)	NextTo: [59, 56, 56, 59, 65]	Opposite: [65, 59, 59, 59]
+      Beds:
+      - b0_r5_c1_a1B_f1 (id: 63)	NextTo: [64]	Opposite: []
+      - b1_r5_c1_a1B_f1 (id: 64)	NextTo: [63]	Opposite: []
+
+     - r6_c0_a1B_f1 (id: 65)	NextTo: [59, 71, 71, 62, 74]	Opposite: [62, 68]
+      Beds:
+      - b0_r6_c0_a1B_f1 (id: 66)	NextTo: [67]	Opposite: []
+      - b1_r6_c0_a1B_f1 (id: 67)	NextTo: [66]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a0A_f1 (id: 398)
+		NextTo: {'1': 402, '4': 397, }
+		RoomsBorder: {'bottomLeft': 53, 'bottomRight': 56, }
+
+     Rooms:
+     - r0_c1_a1B_f1 (id: 47)	NextTo: [53, 53, 53, 53, 53, 53]	Opposite: [50, 50, 50, 50]
+      Beds:
+      - b0_r0_c1_a1B_f1 (id: 48)	NextTo: [49]	Opposite: []
+      - b1_r0_c1_a1B_f1 (id: 49)	NextTo: [48]	Opposite: []
+
+     - r1_c1_a1B_f1 (id: 50)	NextTo: [56, 56, 56, 56, 56, 56]	Opposite: [47, 47, 47, 47]
+      Beds:
+      - b0_r1_c1_a1B_f1 (id: 51)	NextTo: [52]	Opposite: []
+      - b1_r1_c1_a1B_f1 (id: 52)	NextTo: [51]	Opposite: []
+
+     - r2_c1_a1B_f1 (id: 53)	NextTo: [47, 47, 47, 59, 47, 59, 47, 47]	Opposite: [56, 56, 56, 56]
+      Beds:
+      - b0_r2_c1_a1B_f1 (id: 54)	NextTo: [55]	Opposite: []
+      - b1_r2_c1_a1B_f1 (id: 55)	NextTo: [54]	Opposite: []
+
+     - r3_c1_a1B_f1 (id: 56)	NextTo: [50, 50, 50, 62, 50, 62, 50, 50]	Opposite: [53, 53, 53, 53]
+      Beds:
+      - b0_r3_c1_a1B_f1 (id: 57)	NextTo: [58]	Opposite: []
+      - b1_r3_c1_a1B_f1 (id: 58)	NextTo: [57]	Opposite: []
+
+   * a1A_f1 (id: 394)	Tipo: B0
+
+    Horizontal Corridors:
+    - c0_a1A_f1 (id: 399)
+		NextTo: {'0': 397, '5': 400, }
+		RoomsBorder: {'leftTop': 59, 'leftBottom': 62, }
+
+     Rooms:
+     - r4_c1_a1B_f1 (id: 59)	NextTo: [62, 65, 53, 53, 62]	Opposite: [62, 62, 62]
+      Beds:
+      - b0_r4_c1_a1B_f1 (id: 60)	NextTo: [61]	Opposite: []
+      - b1_r4_c1_a1B_f1 (id: 61)	NextTo: [60]	Opposite: []
+
+     - r5_c1_a1B_f1 (id: 62)	NextTo: [59, 56, 56, 59, 65]	Opposite: [65, 59, 59, 59]
+      Beds:
+      - b0_r5_c1_a1B_f1 (id: 63)	NextTo: [64]	Opposite: []
+      - b1_r5_c1_a1B_f1 (id: 64)	NextTo: [63]	Opposite: []
+
+     - r6_c0_a1B_f1 (id: 65)	NextTo: [59, 71, 71, 62, 74]	Opposite: [62, 68]
+      Beds:
+      - b0_r6_c0_a1B_f1 (id: 66)	NextTo: [67]	Opposite: []
+      - b1_r6_c0_a1B_f1 (id: 67)	NextTo: [66]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a1A_f1 (id: 400)
+		NextTo: {'1': 404, '2': 399, }
+		RoomsBorder: {'bottomLeft': 53, 'bottomRight': 56, }
+
+     Rooms:
+     - r0_c1_a1B_f1 (id: 47)	NextTo: [53, 53, 53, 53, 53, 53]	Opposite: [50, 50, 50, 50]
+      Beds:
+      - b0_r0_c1_a1B_f1 (id: 48)	NextTo: [49]	Opposite: []
+      - b1_r0_c1_a1B_f1 (id: 49)	NextTo: [48]	Opposite: []
+
+     - r1_c1_a1B_f1 (id: 50)	NextTo: [56, 56, 56, 56, 56, 56]	Opposite: [47, 47, 47, 47]
+      Beds:
+      - b0_r1_c1_a1B_f1 (id: 51)	NextTo: [52]	Opposite: []
+      - b1_r1_c1_a1B_f1 (id: 52)	NextTo: [51]	Opposite: []
+
+     - r2_c1_a1B_f1 (id: 53)	NextTo: [47, 47, 47, 59, 47, 59, 47, 47]	Opposite: [56, 56, 56, 56]
+      Beds:
+      - b0_r2_c1_a1B_f1 (id: 54)	NextTo: [55]	Opposite: []
+      - b1_r2_c1_a1B_f1 (id: 55)	NextTo: [54]	Opposite: []
+
+     - r3_c1_a1B_f1 (id: 56)	NextTo: [50, 50, 50, 62, 50, 62, 50, 50]	Opposite: [53, 53, 53, 53]
+      Beds:
+      - b0_r3_c1_a1B_f1 (id: 57)	NextTo: [58]	Opposite: []
+      - b1_r3_c1_a1B_f1 (id: 58)	NextTo: [57]	Opposite: []
+
+   * a0B_f1 (id: 395)	Tipo: C3
+
+    Horizontal Corridors:
+    - c0_a0B_f1 (id: 401)
+		NextTo: {'1': 403, '2': 402, }
+		RoomsBorder: {'rightTop': 74, 'rightBottom': 77, }
+
+     Rooms:
+     - r6_c0_a1B_f1 (id: 65)	NextTo: [59, 71, 71, 62, 74]	Opposite: [62, 68]
+      Beds:
+      - b0_r6_c0_a1B_f1 (id: 66)	NextTo: [67]	Opposite: []
+      - b1_r6_c0_a1B_f1 (id: 67)	NextTo: [66]	Opposite: []
+
+     - r7_c0_a1B_f1 (id: 68)	NextTo: [74, 74, 77]	Opposite: [71, 65]
+      Beds:
+      - b0_r7_c0_a1B_f1 (id: 69)	NextTo: [70]	Opposite: []
+      - b1_r7_c0_a1B_f1 (id: 70)	NextTo: [69]	Opposite: []
+
+     - r8_c0_a1B_f1 (id: 71)	NextTo: [65, 77, 65]	Opposite: [68, 74]
+      Beds:
+      - b0_r8_c0_a1B_f1 (id: 72)	NextTo: [73]	Opposite: []
+      - b1_r8_c0_a1B_f1 (id: 73)	NextTo: [72]	Opposite: []
+
+     - r9_c0_a1B_f1 (id: 74)	NextTo: [68, 68, 77, 65]	Opposite: [77, 77]
+      Beds:
+      - b0_r9_c0_a1B_f1 (id: 75)	NextTo: [76]	Opposite: []
+      - b1_r9_c0_a1B_f1 (id: 76)	NextTo: [75]	Opposite: []
+
+     - r10_c0_a1B_f1 (id: 77)	NextTo: [71, 74, 68]	Opposite: [74]
+      Beds:
+      - b0_r10_c0_a1B_f1 (id: 78)	NextTo: [79]	Opposite: []
+      - b1_r10_c0_a1B_f1 (id: 79)	NextTo: [78]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a0B_f1 (id: 402)
+		NextTo: {'0': 398, '5': 401, }
+		RoomsBorder: {'topLeft': 47, 'topRight': 50, }
+
+     Rooms:
+     - r0_c1_a1B_f1 (id: 47)	NextTo: [53, 53, 53, 53, 53, 53]	Opposite: [50, 50, 50, 50]
+      Beds:
+      - b0_r0_c1_a1B_f1 (id: 48)	NextTo: [49]	Opposite: []
+      - b1_r0_c1_a1B_f1 (id: 49)	NextTo: [48]	Opposite: []
+
+     - r1_c1_a1B_f1 (id: 50)	NextTo: [56, 56, 56, 56, 56, 56]	Opposite: [47, 47, 47, 47]
+      Beds:
+      - b0_r1_c1_a1B_f1 (id: 51)	NextTo: [52]	Opposite: []
+      - b1_r1_c1_a1B_f1 (id: 52)	NextTo: [51]	Opposite: []
+
+     - r2_c1_a1B_f1 (id: 53)	NextTo: [47, 47, 47, 59, 47, 59, 47, 47]	Opposite: [56, 56, 56, 56]
+      Beds:
+      - b0_r2_c1_a1B_f1 (id: 54)	NextTo: [55]	Opposite: []
+      - b1_r2_c1_a1B_f1 (id: 55)	NextTo: [54]	Opposite: []
+
+     - r3_c1_a1B_f1 (id: 56)	NextTo: [50, 50, 50, 62, 50, 62, 50, 50]	Opposite: [53, 53, 53, 53]
+      Beds:
+      - b0_r3_c1_a1B_f1 (id: 57)	NextTo: [58]	Opposite: []
+      - b1_r3_c1_a1B_f1 (id: 58)	NextTo: [57]	Opposite: []
+
+     - r4_c1_a1B_f1 (id: 59)	NextTo: [62, 65, 53, 53, 62]	Opposite: [62, 62, 62]
+      Beds:
+      - b0_r4_c1_a1B_f1 (id: 60)	NextTo: [61]	Opposite: []
+      - b1_r4_c1_a1B_f1 (id: 61)	NextTo: [60]	Opposite: []
+
+     - r5_c1_a1B_f1 (id: 62)	NextTo: [59, 56, 56, 59, 65]	Opposite: [65, 59, 59, 59]
+      Beds:
+      - b0_r5_c1_a1B_f1 (id: 63)	NextTo: [64]	Opposite: []
+      - b1_r5_c1_a1B_f1 (id: 64)	NextTo: [63]	Opposite: []
+
+   * a1B_f1 (id: 396)	Tipo: D3
+
+    Horizontal Corridors:
+    - c0_a1B_f1 (id: 403)
+		NextTo: {'0': 401, '3': 404, }
+		RoomsBorder: {'leftTop': 65, 'leftBottom': 68, }
+
+     Rooms:
+     - r6_c0_a1B_f1 (id: 65)	NextTo: [59, 71, 71, 62, 74]	Opposite: [62, 68]
+      Beds:
+      - b0_r6_c0_a1B_f1 (id: 66)	NextTo: [67]	Opposite: []
+      - b1_r6_c0_a1B_f1 (id: 67)	NextTo: [66]	Opposite: []
+
+     - r7_c0_a1B_f1 (id: 68)	NextTo: [74, 74, 77]	Opposite: [71, 65]
+      Beds:
+      - b0_r7_c0_a1B_f1 (id: 69)	NextTo: [70]	Opposite: []
+      - b1_r7_c0_a1B_f1 (id: 70)	NextTo: [69]	Opposite: []
+
+     - r8_c0_a1B_f1 (id: 71)	NextTo: [65, 77, 65]	Opposite: [68, 74]
+      Beds:
+      - b0_r8_c0_a1B_f1 (id: 72)	NextTo: [73]	Opposite: []
+      - b1_r8_c0_a1B_f1 (id: 73)	NextTo: [72]	Opposite: []
+
+     - r9_c0_a1B_f1 (id: 74)	NextTo: [68, 68, 77, 65]	Opposite: [77, 77]
+      Beds:
+      - b0_r9_c0_a1B_f1 (id: 75)	NextTo: [76]	Opposite: []
+      - b1_r9_c0_a1B_f1 (id: 76)	NextTo: [75]	Opposite: []
+
+     - r10_c0_a1B_f1 (id: 77)	NextTo: [71, 74, 68]	Opposite: [74]
+      Beds:
+      - b0_r10_c0_a1B_f1 (id: 78)	NextTo: [79]	Opposite: []
+      - b1_r10_c0_a1B_f1 (id: 79)	NextTo: [78]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a1B_f1 (id: 404)
+		NextTo: {'0': 400, '3': 403, }
+		RoomsBorder: {'topLeft': 47, 'topRight': 50, }
+
+     Rooms:
+     - r0_c1_a1B_f1 (id: 47)	NextTo: [53, 53, 53, 53, 53, 53]	Opposite: [50, 50, 50, 50]
+      Beds:
+      - b0_r0_c1_a1B_f1 (id: 48)	NextTo: [49]	Opposite: []
+      - b1_r0_c1_a1B_f1 (id: 49)	NextTo: [48]	Opposite: []
+
+     - r1_c1_a1B_f1 (id: 50)	NextTo: [56, 56, 56, 56, 56, 56]	Opposite: [47, 47, 47, 47]
+      Beds:
+      - b0_r1_c1_a1B_f1 (id: 51)	NextTo: [52]	Opposite: []
+      - b1_r1_c1_a1B_f1 (id: 52)	NextTo: [51]	Opposite: []
+
+     - r2_c1_a1B_f1 (id: 53)	NextTo: [47, 47, 47, 59, 47, 59, 47, 47]	Opposite: [56, 56, 56, 56]
+      Beds:
+      - b0_r2_c1_a1B_f1 (id: 54)	NextTo: [55]	Opposite: []
+      - b1_r2_c1_a1B_f1 (id: 55)	NextTo: [54]	Opposite: []
+
+     - r3_c1_a1B_f1 (id: 56)	NextTo: [50, 50, 50, 62, 50, 62, 50, 50]	Opposite: [53, 53, 53, 53]
+      Beds:
+      - b0_r3_c1_a1B_f1 (id: 57)	NextTo: [58]	Opposite: []
+      - b1_r3_c1_a1B_f1 (id: 58)	NextTo: [57]	Opposite: []
+
+     - r4_c1_a1B_f1 (id: 59)	NextTo: [62, 65, 53, 53, 62]	Opposite: [62, 62, 62]
+      Beds:
+      - b0_r4_c1_a1B_f1 (id: 60)	NextTo: [61]	Opposite: []
+      - b1_r4_c1_a1B_f1 (id: 61)	NextTo: [60]	Opposite: []
+
+     - r5_c1_a1B_f1 (id: 62)	NextTo: [59, 56, 56, 59, 65]	Opposite: [65, 59, 59, 59]
+      Beds:
+      - b0_r5_c1_a1B_f1 (id: 63)	NextTo: [64]	Opposite: []
+      - b1_r5_c1_a1B_f1 (id: 64)	NextTo: [63]	Opposite: []
+
+   Units:
+   - A (id: 389)	NextTo: [None, 390]
+
+   - B (id: 390)	NextTo: [389, None]
+
+   Blocks:
+   - 0 (id: 391)	NextTo: [None, 392]
+
+   - 1 (id: 392)	NextTo: [391, None]
+
+  + f2 (id: 387) has: 2 Rows (Unit) y 2 Columns (Blocks)
+
+   Hospitalization Units (5):
+   - HU3A - HospUnit 3A (id: 365)	Rooms: [155, 158, 161, 164, 167, 170, 173]   --Service->   S3 - Service 3 (id: 5)
+   - HU3B - HospUnit 3B (id: 366)	Rooms: [176, 179, 182, 185, 188, 191, 194]   --Service->   S3 - Service 3 (id: 5)
+   - HU4A - HospUnit 4A (id: 367)	Rooms: [197, 200, 203, 206, 209, 212]   --Service->   S4 - Service 4 (id: 6)
+   - HU4B - HospUnit 4B (id: 368)	Rooms: [215, 218, 221, 224, 227]   --Service->   S4 - Service 4 (id: 6)
+   - HU5A - HospUnit 5A (id: 369)	Rooms: [230, 233, 236, 239, 242]   --Service->   S5 - Service 5 (id: 7)
+
+   Areas:
+   * a0A_f2 (id: 409)	Tipo: A0
+
+    Horizontal Corridors:
+    - c0_a0A_f2 (id: 413)
+		NextTo: {'1': 415, '4': 414, }
+		RoomsBorder: {'rightTop': 170, 'rightBottom': 173, }
+
+     Rooms:
+     - r4_c0_a1B_f2 (id: 167)	NextTo: [170, 173, 173, 173, 170, 170]	Opposite: [170, 170]
+      Beds:
+      - b0_r4_c0_a1B_f2 (id: 168)	NextTo: [169]	Opposite: []
+      - b1_r4_c0_a1B_f2 (id: 169)	NextTo: [168]	Opposite: []
+
+     - r5_c0_a1B_f2 (id: 170)	NextTo: [167, 176, 167, 173, 167, 173]	Opposite: [173, 167, 173, 167]
+      Beds:
+      - b0_r5_c0_a1B_f2 (id: 171)	NextTo: [172]	Opposite: []
+      - b1_r5_c0_a1B_f2 (id: 172)	NextTo: [171]	Opposite: []
+
+     - r6_c0_a1B_f2 (id: 173)	NextTo: [167, 167, 167, 170, 170]	Opposite: [170, 170, 176]
+      Beds:
+      - b0_r6_c0_a1B_f2 (id: 174)	NextTo: [175]	Opposite: []
+      - b1_r6_c0_a1B_f2 (id: 175)	NextTo: [174]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a0A_f2 (id: 414)
+		NextTo: {'1': 418, '4': 413, }
+		RoomsBorder: {'bottomLeft': 161, 'bottomRight': 164, }
+
+     Rooms:
+     - r0_c1_a1B_f2 (id: 155)	NextTo: [161, 161, 161, 161, 161, 161]	Opposite: [158, 158, 158, 158]
+      Beds:
+      - b0_r0_c1_a1B_f2 (id: 156)	NextTo: [157]	Opposite: []
+      - b1_r0_c1_a1B_f2 (id: 157)	NextTo: [156]	Opposite: []
+
+     - r1_c1_a1B_f2 (id: 158)	NextTo: [164, 164, 164, 164, 164, 164]	Opposite: [155, 155, 155, 155]
+      Beds:
+      - b0_r1_c1_a1B_f2 (id: 159)	NextTo: [160]	Opposite: []
+      - b1_r1_c1_a1B_f2 (id: 160)	NextTo: [159]	Opposite: []
+
+     - r2_c1_a1B_f2 (id: 161)	NextTo: [155, 155, 155, 155, 155, 155]	Opposite: [164, 164, 164, 164]
+      Beds:
+      - b0_r2_c1_a1B_f2 (id: 162)	NextTo: [163]	Opposite: []
+      - b1_r2_c1_a1B_f2 (id: 163)	NextTo: [162]	Opposite: []
+
+     - r3_c1_a1B_f2 (id: 164)	NextTo: [158, 158, 158, 158, 158, 158]	Opposite: [161, 161, 161, 161]
+      Beds:
+      - b0_r3_c1_a1B_f2 (id: 165)	NextTo: [166]	Opposite: []
+      - b1_r3_c1_a1B_f2 (id: 166)	NextTo: [165]	Opposite: []
+
+   * a1A_f2 (id: 410)	Tipo: B0
+
+    Horizontal Corridors:
+    - c0_a1A_f2 (id: 415)
+		NextTo: {'0': 413, '5': 416, }
+		RoomsBorder: {'leftTop': 167, 'leftBottom': 170, }
+
+     Rooms:
+     - r4_c0_a1B_f2 (id: 167)	NextTo: [170, 173, 173, 173, 170, 170]	Opposite: [170, 170]
+      Beds:
+      - b0_r4_c0_a1B_f2 (id: 168)	NextTo: [169]	Opposite: []
+      - b1_r4_c0_a1B_f2 (id: 169)	NextTo: [168]	Opposite: []
+
+     - r5_c0_a1B_f2 (id: 170)	NextTo: [167, 176, 167, 173, 167, 173]	Opposite: [173, 167, 173, 167]
+      Beds:
+      - b0_r5_c0_a1B_f2 (id: 171)	NextTo: [172]	Opposite: []
+      - b1_r5_c0_a1B_f2 (id: 172)	NextTo: [171]	Opposite: []
+
+     - r6_c0_a1B_f2 (id: 173)	NextTo: [167, 167, 167, 170, 170]	Opposite: [170, 170, 176]
+      Beds:
+      - b0_r6_c0_a1B_f2 (id: 174)	NextTo: [175]	Opposite: []
+      - b1_r6_c0_a1B_f2 (id: 175)	NextTo: [174]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a1A_f2 (id: 416)
+		NextTo: {'1': 420, '2': 415, }
+		RoomsBorder: {'bottomLeft': 161, 'bottomRight': 164, }
+
+     Rooms:
+     - r0_c1_a1B_f2 (id: 155)	NextTo: [161, 161, 161, 161, 161, 161]	Opposite: [158, 158, 158, 158]
+      Beds:
+      - b0_r0_c1_a1B_f2 (id: 156)	NextTo: [157]	Opposite: []
+      - b1_r0_c1_a1B_f2 (id: 157)	NextTo: [156]	Opposite: []
+
+     - r1_c1_a1B_f2 (id: 158)	NextTo: [164, 164, 164, 164, 164, 164]	Opposite: [155, 155, 155, 155]
+      Beds:
+      - b0_r1_c1_a1B_f2 (id: 159)	NextTo: [160]	Opposite: []
+      - b1_r1_c1_a1B_f2 (id: 160)	NextTo: [159]	Opposite: []
+
+     - r2_c1_a1B_f2 (id: 161)	NextTo: [155, 155, 155, 155, 155, 155]	Opposite: [164, 164, 164, 164]
+      Beds:
+      - b0_r2_c1_a1B_f2 (id: 162)	NextTo: [163]	Opposite: []
+      - b1_r2_c1_a1B_f2 (id: 163)	NextTo: [162]	Opposite: []
+
+     - r3_c1_a1B_f2 (id: 164)	NextTo: [158, 158, 158, 158, 158, 158]	Opposite: [161, 161, 161, 161]
+      Beds:
+      - b0_r3_c1_a1B_f2 (id: 165)	NextTo: [166]	Opposite: []
+      - b1_r3_c1_a1B_f2 (id: 166)	NextTo: [165]	Opposite: []
+
+   * a0B_f2 (id: 411)	Tipo: C0
+
+    Horizontal Corridors:
+    - c0_a0B_f2 (id: 417)
+		NextTo: {'1': 419, '2': 418, }
+		RoomsBorder: {'rightTop': 170, 'rightBottom': 173, }
+
+     Rooms:
+     - r4_c0_a1B_f2 (id: 167)	NextTo: [170, 173, 173, 173, 170, 170]	Opposite: [170, 170]
+      Beds:
+      - b0_r4_c0_a1B_f2 (id: 168)	NextTo: [169]	Opposite: []
+      - b1_r4_c0_a1B_f2 (id: 169)	NextTo: [168]	Opposite: []
+
+     - r5_c0_a1B_f2 (id: 170)	NextTo: [167, 176, 167, 173, 167, 173]	Opposite: [173, 167, 173, 167]
+      Beds:
+      - b0_r5_c0_a1B_f2 (id: 171)	NextTo: [172]	Opposite: []
+      - b1_r5_c0_a1B_f2 (id: 172)	NextTo: [171]	Opposite: []
+
+     - r6_c0_a1B_f2 (id: 173)	NextTo: [167, 167, 167, 170, 170]	Opposite: [170, 170, 176]
+      Beds:
+      - b0_r6_c0_a1B_f2 (id: 174)	NextTo: [175]	Opposite: []
+      - b1_r6_c0_a1B_f2 (id: 175)	NextTo: [174]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a0B_f2 (id: 418)
+		NextTo: {'0': 414, '5': 417, }
+		RoomsBorder: {'topLeft': 155, 'topRight': 158, }
+
+     Rooms:
+     - r0_c1_a1B_f2 (id: 155)	NextTo: [161, 161, 161, 161, 161, 161]	Opposite: [158, 158, 158, 158]
+      Beds:
+      - b0_r0_c1_a1B_f2 (id: 156)	NextTo: [157]	Opposite: []
+      - b1_r0_c1_a1B_f2 (id: 157)	NextTo: [156]	Opposite: []
+
+     - r1_c1_a1B_f2 (id: 158)	NextTo: [164, 164, 164, 164, 164, 164]	Opposite: [155, 155, 155, 155]
+      Beds:
+      - b0_r1_c1_a1B_f2 (id: 159)	NextTo: [160]	Opposite: []
+      - b1_r1_c1_a1B_f2 (id: 160)	NextTo: [159]	Opposite: []
+
+     - r2_c1_a1B_f2 (id: 161)	NextTo: [155, 155, 155, 155, 155, 155]	Opposite: [164, 164, 164, 164]
+      Beds:
+      - b0_r2_c1_a1B_f2 (id: 162)	NextTo: [163]	Opposite: []
+      - b1_r2_c1_a1B_f2 (id: 163)	NextTo: [162]	Opposite: []
+
+     - r3_c1_a1B_f2 (id: 164)	NextTo: [158, 158, 158, 158, 158, 158]	Opposite: [161, 161, 161, 161]
+      Beds:
+      - b0_r3_c1_a1B_f2 (id: 165)	NextTo: [166]	Opposite: []
+      - b1_r3_c1_a1B_f2 (id: 166)	NextTo: [165]	Opposite: []
+
+   * a1B_f2 (id: 412)	Tipo: D1
+
+    Horizontal Corridors:
+    - c0_a1B_f2 (id: 419)
+		NextTo: {'0': 417, '3': 420, }
+		RoomsBorder: {'leftTop': 167, 'leftBottom': 170, }
+
+     Rooms:
+     - r4_c0_a1B_f2 (id: 167)	NextTo: [170, 173, 173, 173, 170, 170]	Opposite: [170, 170]
+      Beds:
+      - b0_r4_c0_a1B_f2 (id: 168)	NextTo: [169]	Opposite: []
+      - b1_r4_c0_a1B_f2 (id: 169)	NextTo: [168]	Opposite: []
+
+     - r5_c0_a1B_f2 (id: 170)	NextTo: [167, 176, 167, 173, 167, 173]	Opposite: [173, 167, 173, 167]
+      Beds:
+      - b0_r5_c0_a1B_f2 (id: 171)	NextTo: [172]	Opposite: []
+      - b1_r5_c0_a1B_f2 (id: 172)	NextTo: [171]	Opposite: []
+
+     - r6_c0_a1B_f2 (id: 173)	NextTo: [167, 167, 167, 170, 170]	Opposite: [170, 170, 176]
+      Beds:
+      - b0_r6_c0_a1B_f2 (id: 174)	NextTo: [175]	Opposite: []
+      - b1_r6_c0_a1B_f2 (id: 175)	NextTo: [174]	Opposite: []
+
+     - r7_c0_a1B_f2 (id: 176)	NextTo: [170, 179]	Opposite: [173]
+      Beds:
+      - b0_r7_c0_a1B_f2 (id: 177)	NextTo: [178]	Opposite: []
+      - b1_r7_c0_a1B_f2 (id: 178)	NextTo: [177]	Opposite: []
+
+     - r8_c0_a1B_f2 (id: 179)	NextTo: [176]	Opposite: []
+      Beds:
+      - b0_r8_c0_a1B_f2 (id: 180)	NextTo: [181]	Opposite: []
+      - b1_r8_c0_a1B_f2 (id: 181)	NextTo: [180]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a1B_f2 (id: 420)
+		NextTo: {'0': 416, '3': 419, }
+		RoomsBorder: {'topLeft': 155, 'topRight': 158, }
+
+     Rooms:
+     - r0_c1_a1B_f2 (id: 155)	NextTo: [161, 161, 161, 161, 161, 161]	Opposite: [158, 158, 158, 158]
+      Beds:
+      - b0_r0_c1_a1B_f2 (id: 156)	NextTo: [157]	Opposite: []
+      - b1_r0_c1_a1B_f2 (id: 157)	NextTo: [156]	Opposite: []
+
+     - r1_c1_a1B_f2 (id: 158)	NextTo: [164, 164, 164, 164, 164, 164]	Opposite: [155, 155, 155, 155]
+      Beds:
+      - b0_r1_c1_a1B_f2 (id: 159)	NextTo: [160]	Opposite: []
+      - b1_r1_c1_a1B_f2 (id: 160)	NextTo: [159]	Opposite: []
+
+     - r2_c1_a1B_f2 (id: 161)	NextTo: [155, 155, 155, 155, 155, 155]	Opposite: [164, 164, 164, 164]
+      Beds:
+      - b0_r2_c1_a1B_f2 (id: 162)	NextTo: [163]	Opposite: []
+      - b1_r2_c1_a1B_f2 (id: 163)	NextTo: [162]	Opposite: []
+
+     - r3_c1_a1B_f2 (id: 164)	NextTo: [158, 158, 158, 158, 158, 158]	Opposite: [161, 161, 161, 161]
+      Beds:
+      - b0_r3_c1_a1B_f2 (id: 165)	NextTo: [166]	Opposite: []
+      - b1_r3_c1_a1B_f2 (id: 166)	NextTo: [165]	Opposite: []
+
+   Units:
+   - A (id: 405)	NextTo: [None, 406]
+
+   - B (id: 406)	NextTo: [405, None]
+
+   Blocks:
+   - 0 (id: 407)	NextTo: [None, 408]
+
+   - 1 (id: 408)	NextTo: [407, None]
+
+  + f3 (id: 388) has: 2 Rows (Unit) y 2 Columns (Blocks)
+
+   Hospitalization Units (5):
+   - HU5B - HospUnit 5B (id: 370)	Rooms: [245, 248, 251, 254, 257]   --Service->   S5 - Service 5 (id: 7)
+   - HU6A - HospUnit 6A (id: 371)	Rooms: [260, 263, 266, 269, 272, 275]   --Service->   S6 - Service 6 (id: 8)
+   - HU6B - HospUnit 6B (id: 372)	Rooms: [278, 281, 284, 287, 290, 293]   --Service->   S6 - Service 6 (id: 8)
+   - HU7A - HospUnit 7A (id: 373)	Rooms: [296, 299, 302, 305, 308, 311]   --Service->   S7 - Service 7 (id: 9)
+   - HU7B - HospUnit 7B (id: 374)	Rooms: [314, 317, 320, 323, 326]   --Service->   S7 - Service 7 (id: 9)
+
+   Areas:
+   * a0A_f3 (id: 425)	Tipo: A0
+
+    Horizontal Corridors:
+    - c0_a0A_f3 (id: 429)
+		NextTo: {'1': 431, '4': 430, }
+		RoomsBorder: {'rightTop': 260, 'rightBottom': 263, }
+
+     Rooms:
+     - r4_c0_a1B_f3 (id: 257)	NextTo: [260, 263, 263, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r4_c0_a1B_f3 (id: 258)	NextTo: [259]	Opposite: []
+      - b1_r4_c0_a1B_f3 (id: 259)	NextTo: [258]	Opposite: []
+
+     - r5_c0_a1B_f3 (id: 260)	NextTo: [257, 263, 257, 263, 257, 263]	Opposite: [263, 257, 263, 257]
+      Beds:
+      - b0_r5_c0_a1B_f3 (id: 261)	NextTo: [262]	Opposite: []
+      - b1_r5_c0_a1B_f3 (id: 262)	NextTo: [261]	Opposite: []
+
+     - r6_c0_a1B_f3 (id: 263)	NextTo: [257, 257, 260, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r6_c0_a1B_f3 (id: 264)	NextTo: [265]	Opposite: []
+      - b1_r6_c0_a1B_f3 (id: 265)	NextTo: [264]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a0A_f3 (id: 430)
+		NextTo: {'1': 434, '4': 429, }
+		RoomsBorder: {'bottomLeft': 251, 'bottomRight': 254, }
+
+     Rooms:
+     - r0_c1_a1B_f3 (id: 245)	NextTo: [251, 251, 251, 251, 251, 251]	Opposite: [248, 248, 248, 248]
+      Beds:
+      - b0_r0_c1_a1B_f3 (id: 246)	NextTo: [247]	Opposite: []
+      - b1_r0_c1_a1B_f3 (id: 247)	NextTo: [246]	Opposite: []
+
+     - r1_c1_a1B_f3 (id: 248)	NextTo: [254, 254, 254, 254, 254, 254]	Opposite: [245, 245, 245, 245]
+      Beds:
+      - b0_r1_c1_a1B_f3 (id: 249)	NextTo: [250]	Opposite: []
+      - b1_r1_c1_a1B_f3 (id: 250)	NextTo: [249]	Opposite: []
+
+     - r2_c1_a1B_f3 (id: 251)	NextTo: [245, 245, 245, 245, 245, 245]	Opposite: [254, 254, 254, 254]
+      Beds:
+      - b0_r2_c1_a1B_f3 (id: 252)	NextTo: [253]	Opposite: []
+      - b1_r2_c1_a1B_f3 (id: 253)	NextTo: [252]	Opposite: []
+
+     - r3_c1_a1B_f3 (id: 254)	NextTo: [248, 248, 248, 248, 248, 248]	Opposite: [251, 251, 251, 251]
+      Beds:
+      - b0_r3_c1_a1B_f3 (id: 255)	NextTo: [256]	Opposite: []
+      - b1_r3_c1_a1B_f3 (id: 256)	NextTo: [255]	Opposite: []
+
+   * a1A_f3 (id: 426)	Tipo: B0
+
+    Horizontal Corridors:
+    - c0_a1A_f3 (id: 431)
+		NextTo: {'0': 429, '5': 432, }
+		RoomsBorder: {'leftTop': 257, 'leftBottom': 260, }
+
+     Rooms:
+     - r4_c0_a1B_f3 (id: 257)	NextTo: [260, 263, 263, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r4_c0_a1B_f3 (id: 258)	NextTo: [259]	Opposite: []
+      - b1_r4_c0_a1B_f3 (id: 259)	NextTo: [258]	Opposite: []
+
+     - r5_c0_a1B_f3 (id: 260)	NextTo: [257, 263, 257, 263, 257, 263]	Opposite: [263, 257, 263, 257]
+      Beds:
+      - b0_r5_c0_a1B_f3 (id: 261)	NextTo: [262]	Opposite: []
+      - b1_r5_c0_a1B_f3 (id: 262)	NextTo: [261]	Opposite: []
+
+     - r6_c0_a1B_f3 (id: 263)	NextTo: [257, 257, 260, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r6_c0_a1B_f3 (id: 264)	NextTo: [265]	Opposite: []
+      - b1_r6_c0_a1B_f3 (id: 265)	NextTo: [264]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a1A_f3 (id: 432)
+		NextTo: {'1': 436, '2': 431, }
+		RoomsBorder: {'bottomLeft': 251, 'bottomRight': 254, }
+
+     Rooms:
+     - r0_c1_a1B_f3 (id: 245)	NextTo: [251, 251, 251, 251, 251, 251]	Opposite: [248, 248, 248, 248]
+      Beds:
+      - b0_r0_c1_a1B_f3 (id: 246)	NextTo: [247]	Opposite: []
+      - b1_r0_c1_a1B_f3 (id: 247)	NextTo: [246]	Opposite: []
+
+     - r1_c1_a1B_f3 (id: 248)	NextTo: [254, 254, 254, 254, 254, 254]	Opposite: [245, 245, 245, 245]
+      Beds:
+      - b0_r1_c1_a1B_f3 (id: 249)	NextTo: [250]	Opposite: []
+      - b1_r1_c1_a1B_f3 (id: 250)	NextTo: [249]	Opposite: []
+
+     - r2_c1_a1B_f3 (id: 251)	NextTo: [245, 245, 245, 245, 245, 245]	Opposite: [254, 254, 254, 254]
+      Beds:
+      - b0_r2_c1_a1B_f3 (id: 252)	NextTo: [253]	Opposite: []
+      - b1_r2_c1_a1B_f3 (id: 253)	NextTo: [252]	Opposite: []
+
+     - r3_c1_a1B_f3 (id: 254)	NextTo: [248, 248, 248, 248, 248, 248]	Opposite: [251, 251, 251, 251]
+      Beds:
+      - b0_r3_c1_a1B_f3 (id: 255)	NextTo: [256]	Opposite: []
+      - b1_r3_c1_a1B_f3 (id: 256)	NextTo: [255]	Opposite: []
+
+   * a0B_f3 (id: 427)	Tipo: C0
+
+    Horizontal Corridors:
+    - c0_a0B_f3 (id: 433)
+		NextTo: {'1': 435, '2': 434, }
+		RoomsBorder: {'rightTop': 260, 'rightBottom': 263, }
+
+     Rooms:
+     - r4_c0_a1B_f3 (id: 257)	NextTo: [260, 263, 263, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r4_c0_a1B_f3 (id: 258)	NextTo: [259]	Opposite: []
+      - b1_r4_c0_a1B_f3 (id: 259)	NextTo: [258]	Opposite: []
+
+     - r5_c0_a1B_f3 (id: 260)	NextTo: [257, 263, 257, 263, 257, 263]	Opposite: [263, 257, 263, 257]
+      Beds:
+      - b0_r5_c0_a1B_f3 (id: 261)	NextTo: [262]	Opposite: []
+      - b1_r5_c0_a1B_f3 (id: 262)	NextTo: [261]	Opposite: []
+
+     - r6_c0_a1B_f3 (id: 263)	NextTo: [257, 257, 260, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r6_c0_a1B_f3 (id: 264)	NextTo: [265]	Opposite: []
+      - b1_r6_c0_a1B_f3 (id: 265)	NextTo: [264]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a0B_f3 (id: 434)
+		NextTo: {'0': 430, '5': 433, }
+		RoomsBorder: {'topLeft': 245, 'topRight': 248, }
+
+     Rooms:
+     - r0_c1_a1B_f3 (id: 245)	NextTo: [251, 251, 251, 251, 251, 251]	Opposite: [248, 248, 248, 248]
+      Beds:
+      - b0_r0_c1_a1B_f3 (id: 246)	NextTo: [247]	Opposite: []
+      - b1_r0_c1_a1B_f3 (id: 247)	NextTo: [246]	Opposite: []
+
+     - r1_c1_a1B_f3 (id: 248)	NextTo: [254, 254, 254, 254, 254, 254]	Opposite: [245, 245, 245, 245]
+      Beds:
+      - b0_r1_c1_a1B_f3 (id: 249)	NextTo: [250]	Opposite: []
+      - b1_r1_c1_a1B_f3 (id: 250)	NextTo: [249]	Opposite: []
+
+     - r2_c1_a1B_f3 (id: 251)	NextTo: [245, 245, 245, 245, 245, 245]	Opposite: [254, 254, 254, 254]
+      Beds:
+      - b0_r2_c1_a1B_f3 (id: 252)	NextTo: [253]	Opposite: []
+      - b1_r2_c1_a1B_f3 (id: 253)	NextTo: [252]	Opposite: []
+
+     - r3_c1_a1B_f3 (id: 254)	NextTo: [248, 248, 248, 248, 248, 248]	Opposite: [251, 251, 251, 251]
+      Beds:
+      - b0_r3_c1_a1B_f3 (id: 255)	NextTo: [256]	Opposite: []
+      - b1_r3_c1_a1B_f3 (id: 256)	NextTo: [255]	Opposite: []
+
+   * a1B_f3 (id: 428)	Tipo: D0
+
+    Horizontal Corridors:
+    - c0_a1B_f3 (id: 435)
+		NextTo: {'0': 433, '3': 436, }
+		RoomsBorder: {'leftTop': 257, 'leftBottom': 260, }
+
+     Rooms:
+     - r4_c0_a1B_f3 (id: 257)	NextTo: [260, 263, 263, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r4_c0_a1B_f3 (id: 258)	NextTo: [259]	Opposite: []
+      - b1_r4_c0_a1B_f3 (id: 259)	NextTo: [258]	Opposite: []
+
+     - r5_c0_a1B_f3 (id: 260)	NextTo: [257, 263, 257, 263, 257, 263]	Opposite: [263, 257, 263, 257]
+      Beds:
+      - b0_r5_c0_a1B_f3 (id: 261)	NextTo: [262]	Opposite: []
+      - b1_r5_c0_a1B_f3 (id: 262)	NextTo: [261]	Opposite: []
+
+     - r6_c0_a1B_f3 (id: 263)	NextTo: [257, 257, 260, 260, 260]	Opposite: [260, 260]
+      Beds:
+      - b0_r6_c0_a1B_f3 (id: 264)	NextTo: [265]	Opposite: []
+      - b1_r6_c0_a1B_f3 (id: 265)	NextTo: [264]	Opposite: []
+
+    Vertical Corridors:
+    - c1_a1B_f3 (id: 436)
+		NextTo: {'0': 432, '3': 435, }
+		RoomsBorder: {'topLeft': 245, 'topRight': 248, }
+
+     Rooms:
+     - r0_c1_a1B_f3 (id: 245)	NextTo: [251, 251, 251, 251, 251, 251]	Opposite: [248, 248, 248, 248]
+      Beds:
+      - b0_r0_c1_a1B_f3 (id: 246)	NextTo: [247]	Opposite: []
+      - b1_r0_c1_a1B_f3 (id: 247)	NextTo: [246]	Opposite: []
+
+     - r1_c1_a1B_f3 (id: 248)	NextTo: [254, 254, 254, 254, 254, 254]	Opposite: [245, 245, 245, 245]
+      Beds:
+      - b0_r1_c1_a1B_f3 (id: 249)	NextTo: [250]	Opposite: []
+      - b1_r1_c1_a1B_f3 (id: 250)	NextTo: [249]	Opposite: []
+
+     - r2_c1_a1B_f3 (id: 251)	NextTo: [245, 245, 245, 245, 245, 245]	Opposite: [254, 254, 254, 254]
+      Beds:
+      - b0_r2_c1_a1B_f3 (id: 252)	NextTo: [253]	Opposite: []
+      - b1_r2_c1_a1B_f3 (id: 253)	NextTo: [252]	Opposite: []
+
+     - r3_c1_a1B_f3 (id: 254)	NextTo: [248, 248, 248, 248, 248, 248]	Opposite: [251, 251, 251, 251]
+      Beds:
+      - b0_r3_c1_a1B_f3 (id: 255)	NextTo: [256]	Opposite: []
+      - b1_r3_c1_a1B_f3 (id: 256)	NextTo: [255]	Opposite: []
+
+   Units:
+   - A (id: 421)	NextTo: [None, 422]
+
+   - B (id: 422)	NextTo: [421, None]
+
+   Blocks:
+   - 0 (id: 423)	NextTo: [None, 424]
+
+   - 1 (id: 424)	NextTo: [423, None]
