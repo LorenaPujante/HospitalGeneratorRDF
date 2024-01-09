@@ -1,25 +1,24 @@
 # HospitalGeneratorRDF
 
-aaa
+**_HospitalGeneratorRDF_** is a program that based on the output of [_H-Outbreak_](https://github.com/denissekim/Simulation-Model), a simulation model of the movements of patients inside a hospital, creates a knowledge graph in RDF and RDF* according to a data model that is an extension to the used in [_MimicToRDF_](https://github.com/LorenaPujante/MimicToRDF). It also generates CSV files to allow the use of the data for other purposes and structures.
 
-## 1. Data Structure
+Since H-Outbreak does not cover all the classes and relations from the data model, HospitalGeneratorRDF completes it by adding _Floors_, _Areas_, _Corridors_, _Rooms_, _Beds_, _Services_ (in H-Outbreak they are wards) and _Hospitalization Units_, and the relations between them. It also creates different subclasses of _Events_: _Hospitalization_, _Radiology_, _Surgery_ and _Death_.
+- The file [_Description/HospitalGeneratorRDF - Description.pdf_](https://github.com/LorenaPujante/HospitalGeneratorRDF/blob/main/Description/HospitalGeneratorRDF%20-%20Description.pdf) describes the complete process to create the hospital layout data.
 
-aaa
 
-
-## 2.Installation
+## 1. Installation
 The source code is currently hosted on [github.com/LorenaPujante/HospitalGeneratorRDF](https://github.com/LorenaPujante/HospitalGeneratorRDF).
 
 The program is in Python 3.10, and no external packages are needed.
 
-## 3. Input
+## 2. Input
 The input for HospitalGeneratorRDF must be: 
-- The two files obtained as output from [H-Outbreak](https://github.com/denissekim/Simulation-Model): _movements.csv_ and _patients.csv_
+- The two files obtained as output from H-Outbreak: _movements.csv_ and _patients.csv_
 - An additional file with the hospital layout from H-Outbreak: _hospital.txt_.
-	- To get this file, we need to modify the file _hospital.py_ from H-Outbreak by adding the `printHospital()` function from _Modifications/modification.py_. Then, call the new function at the end of `initialize_hospital()`, just before the `return L`.     
+	- To get this file, we need to modify the file _hospital.py_ from H-Outbreak by adding the `printHospital()` function from [_Modifications/modification.py_](https://github.com/LorenaPujante/HospitalGeneratorRDF/blob/main/Modifications/modification.py). Then, call the new function at the end of `initialize_hospital()`, just before the `return L`.     
 These three files must be in folder _Input_.
 
-## 4. Execution and Configuration Params
+## 3. Execution and Configuration Params
 To run the program, in the terminal, go to the folder containing the program and run: `python main.py`
 
 The main function receives as parameters the following:
@@ -34,11 +33,11 @@ The main function receives as parameters the following:
 The `main()` function also has commented function calls to request these parameters per terminal.
 
 At the end of _main.py_, before the call to `main()` function, we have set some example values for the parameters. We have also uploaded three example input files in _Input_. The output files are also uploaded.
-- In the example, the hospital will have 4 Floors. On the ground floor, there will be 20 Emergency beds, 10 ICU beds, 3 surgery rooms, and 4 radiology rooms with 2 beds each. In the remaining 3 floors, 8 services will be distributed. Each service will have 2 hospitalization units and between 10 and 14 rooms. Each room will have 2 beds. Each floor will have 5 hospitalization units. The 3 upper floors will be organised in a grid of 3 columns by 2 rows. (These 3 last values may change)
-- The initial date will be 01/01/23 08:00:00
+- In the example, the hospital will have 4 Floors. On the ground floor, there will be 20 Emergency beds, 10 ICU beds, 3 surgery rooms, and 4 radiology rooms with 2 beds each. In the remaining 3 floors, 8 services will be distributed. Each service will have 2 hospitalization units and between 10 and 14 rooms. Each room will have 2 beds. Each floor will have 5 hospitalization units. The 3 upper floors will be organised in a grid of 3 columns by 2 rows. (These 3 last values may change during program execution)
+- The initial date will be _01/01/23 08:00:00_
 
 
-## 5. Outcomes
+## 4. Outcomes
 After running the program, the following folders are created:
 - _OutputCSV_: Folder with the nodes and edges of the graph in the form of CSV files.
 	- Nodes and edges are in different folders: `OutputCSV/Classes` (nodes) and `OutputCSV/CSV` (edges). Each class of nodes and edges is in a separate file.
