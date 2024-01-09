@@ -1,0 +1,4 @@
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#Building/377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Location>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#Building/377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Building>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#Building/377> <http://www.semanticweb.org/spatiotemporalHospitalOntology#id> "377"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#Building/377> <http://www.semanticweb.org/spatiotemporalHospitalOntology#description> "Main Building"^^<http://www.w3.org/2001/XMLSchema#string>.
