@@ -1,0 +1,13 @@
+id,description,abbreviation
+350,Emergency Service,ER
+352,Intensive Care Unit Service,ICU
+354,Radiology Service,RAD
+356,Surgery Service,SURG
+2,Service 0,S0
+3,Service 1,S1
+4,Service 2,S2
+5,Service 3,S3
+6,Service 4,S4
+7,Service 5,S5
+8,Service 6,S6
+9,Service 7,S7

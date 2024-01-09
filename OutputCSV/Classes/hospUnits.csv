@@ -1,0 +1,21 @@
+id,description,abbreviation
+351,Emergency Unit,ERU
+353,Intensive Care Unit,ICUU
+355,Radiology Unit,RADU
+357,Surgery Unit,SURGU
+359,HospUnit 0A,HU0A
+360,HospUnit 0B,HU0B
+361,HospUnit 1A,HU1A
+362,HospUnit 1B,HU1B
+363,HospUnit 2A,HU2A
+364,HospUnit 2B,HU2B
+365,HospUnit 3A,HU3A
+366,HospUnit 3B,HU3B
+367,HospUnit 4A,HU4A
+368,HospUnit 4B,HU4B
+369,HospUnit 5A,HU5A
+370,HospUnit 5B,HU5B
+371,HospUnit 6A,HU6A
+372,HospUnit 6B,HU6B
+373,HospUnit 7A,HU7A
+374,HospUnit 7B,HU7B
