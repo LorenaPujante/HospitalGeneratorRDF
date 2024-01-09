@@ -1,4 +1,3 @@
-
 from datetime import datetime
 from mainAuxFunctions import *
 from readInputParams import *
@@ -154,16 +153,17 @@ def main(index, huPerService, nFloors, huPerFloor, nRows, nColumns, startDateTim
 
 #print("Last id Hospital: {}".format(getLastIndexHospital()))
 
+
 # PARAMS
         # The folders where the result files are created are not parameters     
-index = 1600
-huPerService = 3
-nFloors = 5
-huPerFloor = 6
-nRows = 3
-nColumns = 4
+index = 350
+huPerService = 2
+nFloors = 4
+huPerFloor = 5
+nRows = 2
+nColumns = 3
 startDateTime = datetime(2023,1,1,8,0,0)    # 01-01-2023 08:00:00   # dd/mm/yyyy HH:MM:SS
-optionFloorUH = None#1
+optionFloorUH = 2 #None    # Is None, then the option will be asked by terminal
 
 params = []
 paramsLinea = []
