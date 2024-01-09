@@ -1,0 +1,12 @@
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/389_390> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/389_390> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/389_390> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Unit/389>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/389_390> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Unit/390>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/405_406> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/405_406> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/405_406> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Unit/405>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/405_406> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Unit/406>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/421_422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/421_422> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/421_422> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Unit/421>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/421_422> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Unit/422>.

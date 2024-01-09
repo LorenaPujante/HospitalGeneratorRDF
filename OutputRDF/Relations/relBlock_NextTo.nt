@@ -1,0 +1,16 @@
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/380_381> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/380_381> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/380_381> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/380>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/380_381> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/381>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/391_392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/391_392> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/391_392> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/391>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/391_392> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/392>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/407_408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/407_408> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/407_408> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/407>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/407_408> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/408>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/423_424> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/423_424> <http://www.semanticweb.org/spatiotemporalHospitalOntology#cost> "2"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/423_424> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo1> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/423>.
+<http://www.semanticweb.org/spatiotemporalHospitalOntology#NextTo/423_424> <http://www.semanticweb.org/spatiotemporalHospitalOntology#nextTo2> <http://www.semanticweb.org/spatiotemporalHospitalOntology#Block/424>.
