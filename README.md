@@ -5,6 +5,10 @@
 Since H-Outbreak does not cover all the classes and relations from the data model, HospitalGeneratorRDF completes it by adding _Floors_, _Areas_, _Corridors_, _Rooms_, _Beds_, _Services_ (in H-Outbreak they are wards) and _Hospitalization Units_, and the relations between them. It also creates different subclasses of _Events_: _Hospitalization_, _Radiology_, _Surgery_ and _Death_.
 - The file [_Description/HospitalGeneratorRDF - Description.pdf_](https://github.com/LorenaPujante/HospitalGeneratorRDF/blob/main/Description/HospitalGeneratorRDF%20-%20Description.pdf) describes the complete process to create the hospital layout data.
 
+## 0. Related Repositories
+Here, we present some other related repositories that may be of your interest:
+- [**HospitalKG**](https://github.com/LorenaPujante/HospitalKG): It is also linked to [10.1109/JBHI.2024.3417224](https://ieeexplore.ieee.org/document/10568325)
+- [**HospitalGeneratorRDF_V2**](https://github.com/LorenaPujante/HospitalGeneratorRDF_V2): A slightly updated version of this software
 
 ## 1. Installation
 The source code is currently hosted on [github.com/LorenaPujante/HospitalGeneratorRDF](https://github.com/LorenaPujante/HospitalGeneratorRDF).
