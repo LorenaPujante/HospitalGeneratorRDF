@@ -6,7 +6,7 @@ Since H-Outbreak does not cover all the classes and relations from the data mode
 - The file [_Description/HospitalGeneratorRDF - Description.pdf_](https://github.com/LorenaPujante/HospitalGeneratorRDF/blob/main/Description/HospitalGeneratorRDF%20-%20Description.pdf) describes the complete process to create the hospital layout data.
 
 ## 0. Related Repositories
-Here, we present some other related repositories that may be of your interest:
+Below we present some other related repositories that may be of interest to you:
 - [**HospitalKG**](https://github.com/LorenaPujante/HospitalKG): It is also linked to [10.1109/JBHI.2024.3417224](https://ieeexplore.ieee.org/document/10568325)
 - [**HospitalGeneratorRDF_V2**](https://github.com/LorenaPujante/HospitalGeneratorRDF_V2): A slightly updated version of this software
 
